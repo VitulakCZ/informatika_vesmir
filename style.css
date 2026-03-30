@@ -1,0 +1,162 @@
+* {
+    color: white;
+}
+
+body {
+    margin: 0;
+    background: #295680FF;
+}
+
+#pozadi {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#pozadi img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+#odkazy {
+    width: 100vw;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: absolute;
+    top: 4.9rem;
+    background: #181818FF;
+    z-index: 99;
+}
+
+#odkazy a {
+    color: #FFFF82FF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#odkazy a:hover {
+    color: #99FF82FF;
+}
+
+#uvod #odkazy a:first-child, #lide-ve-vesmiru #odkazy a:nth-child(2), #planety-planetky #odkazy a:nth-child(3), #hvezdy #odkazy a:nth-child(4), #komety #odkazy a:nth-child(5), #cerne-diry #odkazy a:last-child {
+    text-decoration: underline;
+    color: #00FF82FF;
+}
+
+h1 {
+    margin: .2rem;
+    font-size: 3.5rem;
+}
+
+h2 {
+    color: #1EFB2BFF;
+    text-decoration: underline;
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.70rem;
+    margin-bottom: .5rem;
+}
+
+h4, span, p {
+    font-size: 1.25rem;
+}
+
+h4::before {
+    display: inline;
+    content: '- ';
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+h4 + p {
+    margin-top: .1rem;
+}
+
+.navrzeni-veci {
+    font-size: 1.50rem;
+    color: brown;
+    font-style: italic;
+}
+
+#navrzeni-teorii + h4 {
+    margin-top: 1rem;
+}
+
+#nadpis-wrapper {
+    width: 100vw;
+    height: 6rem;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(98, 153, 121, 1) 50%, rgba(255, 229, 0, 1) 100%);
+    position: fixed;
+    height: 6rem;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#nadpis-wrapper * {
+    color: #CC0C2EFF;
+}
+
+#kapitoly {
+    position: fixed;
+    top: 6rem;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 17rem;
+}
+
+#kapitoly a {
+    color: #C8D631FF;
+    text-decoration: none;
+}
+
+#text {
+    position: fixed;
+    top: 7rem;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-left: 17rem;
+    margin-right: .5rem;
+}
+
+#animace {
+    width: 90%;
+    height: 300px;
+    background: #181818FF;
+}
+
+#slunce, #zeme {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #181818FF;
+}
+
+#zeme {
+    left: 10%;
+    top: 0;
+    width: 60px;
+}
+
+#slunce img, #zeme img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
