@@ -4,10 +4,10 @@ const zemeStyl = window.getComputedStyle(zeme);
 const slunceStyl = window.getComputedStyle(slunce);
 
 let id = setInterval(otaceni, 5);
-let x = parseInt(zemeStyl.getPropertyValue("left").slice(0, -2));
-let y = parseInt(zemeStyl.getPropertyValue("top").slice(0, -2));
-let bodOtaceniX = parseInt(slunceStyl.getPropertyValue("left").slice(0, -2));
-let bodOtaceniY = parseInt(slunceStyl.getPropertyValue("top").slice(0, -2)) - 200;
+let x = parseInt(zemeStyl.getPropertyValue("left"));
+let y = parseInt(zemeStyl.getPropertyValue("top"));
+let bodOtaceniX = parseInt(slunceStyl.getPropertyValue("left"));
+let bodOtaceniY = parseInt(slunceStyl.getPropertyValue("top")) - 200;
 let uhel = 0;
 
 zeme.style.left = x + "px";
