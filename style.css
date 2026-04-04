@@ -123,11 +123,9 @@ td:not(:first-child):not(:nth-child(4)) {
 
 #nadpis-wrapper {
     width: 100vw;
-    height: 6rem;
     background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(98, 153, 121, 1) 50%, rgba(255, 229, 0, 1) 100%);
     position: fixed;
     height: 4.9rem;
-    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
