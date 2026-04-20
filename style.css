@@ -193,12 +193,14 @@ li ul {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 180px;
-    aspect-ratio: 1/1;
+    height: 180px;
     border-radius: 50%;
     background: #181818FF;
 }
 
 #zeme {
+    width: 60px;
+    height: 60px;
     left: 40%;
     top: 0;
     width: 60px;
