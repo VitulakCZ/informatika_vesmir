@@ -8,6 +8,7 @@ body {
     margin: 0;
 }
 
+/*
 #pozadi {
     position: absolute;
     width: 100vw;
@@ -16,7 +17,6 @@ body {
     z-index: -1;
 }
 
-/*
 #nadpis-wrapper img {
     position: absolute;
     width: 100%;
